@@ -104,7 +104,7 @@ module Appsignal
     end
 
     def self.jruby?
-      RUBY_PLATFORM == "java"
+      RUBY_PLATFORM == "java" || "truffleruby"
     end
   end
 end
